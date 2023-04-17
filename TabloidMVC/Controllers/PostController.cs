@@ -134,7 +134,6 @@ namespace TabloidMVC.Controllers
             }
             catch
             {
-
                 return View(postTag);
             }
         }

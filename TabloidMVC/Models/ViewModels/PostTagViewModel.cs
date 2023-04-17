@@ -10,13 +10,6 @@ namespace TabloidMVC.Models.ViewModels
         public PostTag PostTag { get; set; }
         public List<Tag> Tags { get; set; }
         public List<SelectListItem> Options { get; set; }
-        public void OnGet()
-        {
-            Options = Tags.Select(x => new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Id.ToString(),
-            }).ToList();
-        }
+
     }
 }
